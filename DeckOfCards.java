@@ -1,9 +1,14 @@
-/**
+/**********************************************************************************************************************************************************************
+ *
  *  Deck of Cards having suit ("Clubs", "Diamonds", "Hearts", "Spades") & 
  *  Rank ("2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace")
- *  Shuffled all cards to the four player
+ *  Shuffled all cards to the four players
  *  Finally, Print the player got the cards
- */
+ *
+ *  @author : Immanuvel Jeeva
+ *  @Since  : 22-07-2021
+ *
+ **********************************************************************************************************************************************************************/
 
 import java.util.HashSet;
 import java.util.Set;
@@ -18,6 +23,7 @@ public class DeckOfCards {
         String[][] cardCombo = new String[4][13];
         Set<String> cards = new HashSet<String>();
 
+	//Colobsed the cards
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 13; j++) {
                 cardCombo[i][j] = suits[i] + rank[j];
@@ -60,6 +66,7 @@ public class DeckOfCards {
             }
         }
 
+	//Print the Player Got the Cards
         for (i = 0; i < 4; i++) {
             System.out.print("Player " + (i + 1) + " : ");
             for (j = 0; j < 9; j++) {
